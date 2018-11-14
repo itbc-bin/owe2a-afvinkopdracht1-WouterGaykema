@@ -66,6 +66,24 @@ def knipt(
         seq = seq.strip().replace("^", "")
         if seq in alpaca_seq:
             print(naam, "knipt in sequentie")
+        try:
+            len(seq) = (seq.count("A") + seq.count("R") + seq.count("N") + seq.count("D")
+                        + seq.count("C") + seq.count("E") + seq.count("Q") + seq.count("G")
+                        + seq.count("H") + seq.count("I") + seq.count("L") + seq.count("K")
+                        + seq.count("M") + seq.count("F") + seq.count("P") + seq.count("S")
+                        + seq.count("T") + seq.count("W") + seq.count("Y") + seq.count("V"))
+                        
 
-
-main()
+try:
+    bestandsnaam.endswith(".fasta")
+except:
+    print("Wrong filetype, should be fasta file")
+    
+    
+try:
+    type(check_is_dna) is bool
+            
+try:
+    main()
+except IOError:
+    print("File not found")
