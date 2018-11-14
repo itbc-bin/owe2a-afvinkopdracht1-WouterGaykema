@@ -74,7 +74,7 @@ def knipt(
 try:
     bestandsnaam.endswith(".fasta")
 except:
-    print("WVerkeerd bestandstype; fastabestand verwacht.")
+    print("Verkeerd bestandstype; fastabestand verwacht.")
     
     
 try:
