@@ -40,6 +40,14 @@ def lees_inhoud(
         else:
             seq += line.strip()
     seqs.append(seq)
+    try:
+        headers[0].startswith(">")
+    except:
+        print("headers lijst klopt niet")
+    try:
+        len(headers) == len(seqs)
+    except:
+        print("lijsten headers en sequenties komen niet overeen")
     return headers, seqs
 
     
